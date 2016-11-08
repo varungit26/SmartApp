@@ -30,14 +30,14 @@ smartApp.controller('homeController', ['$scope', '$location', '$log', '$http'
         var self = this;
         self.location = null;
 
-        function locationService() {
+        /*function locationService() {
             $http.get("http://ip-api.com/json").success(function (data) {
                 self.ipAddress = data
                     , self.location = data
                     , cityService.city = self.location.city;
             });
-        }
-        locationService();
+        }*/
+       // locationService();
         $scope.submit = function () {
             $location.path("/forecast");
         };
