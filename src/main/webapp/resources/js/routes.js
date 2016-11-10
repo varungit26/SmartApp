@@ -23,8 +23,8 @@ smartApp.config(function ($routeProvider) {
         controller:'mainFunction'
     })
     
-    .when('/registration', {
+    .when('/register', {
         templateUrl:'resources/html/register.html',
-        controller:'registration'
+        controller:'UserController as ctrl'
     })
 });

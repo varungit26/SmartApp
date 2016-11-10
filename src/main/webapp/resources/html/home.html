@@ -1,19 +1,22 @@
 <div ng-include="'resources/html/header.html'"></div>
 
- <span class="row right" ng-controller="homeController as home">
-     <span class="col-md-6 col-md-offset-3">
-        <form ng-submit="submit()">
-            <div class="form-group">
-                <label class="text-primary text-right">{{home.location.city}} </label> 
-            </div>
+<span class="row right" ng-controller="homeController as home"> <span
+	class="col-md-6 col-md-offset-3">
+		<form ng-submit="submit()">
+			<div class="form-group">
+				<label class="text-primary text-right">{{home.location.city}}
+				</label>
+			</div>
 
-            <div class="form-group">
-                <input type="text primary" ng-model="home.location.query" class="form-control " />
-            </div>
-            <input type="submit" class="btn btn-primary" value="Get Forecast" />
-         </form>
-     </span>     
+			<div class="form-group">
+				<input type="text primary" ng-model="home.location.query"
+					class="form-control " />
+			</div>
+			<input type="submit" class="btn btn-primary" value="Get Forecast" />
+		</form>
 </span>
+</span>
+
 
 <div ng-include="'resources/html/login.html'"></div>
 
